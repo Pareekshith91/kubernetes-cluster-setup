@@ -2,7 +2,7 @@
 Kubernetes Cluster Setup
 # Learned from MicroDegree
 # Kubernetes Cluster Setup on Ubuntu 22.04 LTS
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2XlI9qqed04/0.jpg)](https://www.youtube.com/watch?v=2XlI9qqed04)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2XlI9qqed04/0.jpg)]
 
 This guide provides step-by-step instructions to set up a Kubernetes 1.30.2 cluster on Ubuntu 22.04 LTS.
 
