@@ -87,7 +87,7 @@ sysctl -p /etc/sysctl.conf
 
 ### Step 7: Modify containerd Configuration for systemd Support
 ```bash
-sudo nano /etc/containerd/config.toml
+sudo vi /etc/containerd/config.toml
 ```
 #### Paste the configuration in the file and save it.
 ```bash
