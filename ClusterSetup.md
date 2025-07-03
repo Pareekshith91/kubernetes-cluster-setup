@@ -2,7 +2,7 @@
 Kubernetes Cluster Setup
 # Learned from MicroDegree
 # Kubernetes Cluster Setup on Ubuntu 22.04 LTS
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2XlI9qqed04/0.jpg)]
+![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/2XlI9qqed04/0.jpg)
 
 This guide provides step-by-step instructions to set up a Kubernetes cluster on Ubuntu 22.04 LTS.
 
@@ -331,15 +331,20 @@ sudo apt-mark hold kubelet kubeadm kubectl
 ### Step 10: Initialize the Cluster and Install CNI
 ```bash
 sudo kubeadm config images pull
+```
+
+### Step 10B: Only in Master-node
+```bash
 sudo kubeadm init
 ```
-### Step 11: Join Worker Nodes to the Cluster
+
+### Step 11: Join Worker Nodes to the Cluster (Copy from Master-node & paste in Worker-node)
 #### Run the command generated after initializing the master node on each worker node. For example:
 ```bash
 kubeadm join 192.168.122.100:6443 --token zcijug.ye3vrct74itrkesp \
         --discovery-token-ca-cert-hash sha256:e9dd1a0638a5a1aa1850c16f4c9eeaa2e58d03f97fd0403f587c69502570c9cd
 ```
-#### After Initialzing the Cluster Connect to it and apply the CNI yaml (We're using Weave CNI in this guide)
+#### After Initialzing the Cluster Connect to it and apply the CNI yaml (We're using Weave CNI in this guide) (Only in Master-node)
 
 ```bash
 #To start using your cluster, you need to run the following as a regular user:
