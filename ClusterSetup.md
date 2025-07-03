@@ -357,8 +357,9 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 export KUBECONFIG=/etc/kubernetes/admin.conf
 ```
+
+#### Step 12: Apply the CNI YAML
 ```bash
-#Apply the CNI YAML
 kubectl apply -f https://reweave.azurewebsites.net/k8s/v1.30/net.yaml
 ```
 
